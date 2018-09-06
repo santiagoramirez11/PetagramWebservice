@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfiguracionCuentaActivity">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"></include>
+
+    <TextView
+        android:id="@+id/tvPetagram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        app:layout_constraintTop_toBottomOf="@id/miActionBar"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:paddingTop="10dp"/>
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/tietUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hUsuario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPetagram"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintTop_toBottomOf="@id/tietUsuario"
+        android:text="Instragram ha removido los Endpoints para obtener información de los usuarios, por lo que solo es posible obtener la del usuario actual."
+        android:paddingTop="20dp"/>
+
+
+    <Button
+        android:id="@+id/btnEnviarComentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/lGuardarCuenta"
+        android:textColor="@color/blanco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tietNombre"
+        android:onClick="guardarCuenta"/>
+
+
+</android.support.constraint.ConstraintLayout>

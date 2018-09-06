@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nombreMascota">28sp</dimen>
+    <dimen name="corner_radious_cardview">4dp</dimen>
+    <dimen name="margin_left_layout">8dp</dimen>
+    <dimen name="margin_right_layout">8dp</dimen>
+    <dimen name="margin_bottom_layout">8dp</dimen>
+    <dimen name="margin_top_layout">10dp</dimen>
+    <dimen name="min_height_image_button_pet">275dp</dimen>
+    <dimen name="elevation_action_bar">4dp</dimen>
+    <dimen name="marginFabCamara">20dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>
